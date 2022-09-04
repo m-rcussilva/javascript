@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --primary-color: #B1D7B4;
+    --secondary-color: #4B8673;
+    --tertiary-color: rgba(127, 183, 126, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+}
+
+button, textarea {
+    font: inherit;
+}
+
+.header-label-container {
+    margin-bottom: 5px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 0.2em 0.6em;
+    border: none;
+    outline: 0;
+}
+
+textarea {
+    padding: 1em;
+    resize: none;
+    width: 100%;
+    height: 140px;
+    border-radius: 12px;
+}
+
+#main {
+    margin: 1em;
+}
+
+.main-content {
+    max-width: 35em;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.notice-title {
+    color: #7FB77E;
+    margin-bottom: 10px;
+}
+
+form label {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.form-container {
+    margin-bottom: 1.5em;
+}
+
+.article {
+    background-color: var(--tertiary-color);
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 12px;
+}
+
+#edit-msg {
+    margin-bottom: 1em;
+}

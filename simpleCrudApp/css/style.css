@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 :root {
-    --primary-color: #B1D7B4;
-    --secondary-color: #4B8673;
-    --tertiary-color: rgba(127, 183, 126, 0.5);
+    --primary-color: #fff;
+    --secondary-color: #3b3b3b;
+    --tertiary-color: #ededed;
 }
 
 * {
@@ -11,32 +11,42 @@
     margin: 0;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
 body {
     background-color: var(--primary-color);
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
     -webkit-font-smoothing: antialiased;
     line-height: 1.5;
 }
 
-button, textarea {
+button,
+textarea {
     font: inherit;
 }
 
 .header-label-container {
-    margin-bottom: 5px;
+    margin: 10px 0;
 }
 
 button {
     cursor: pointer;
     border-radius: 8px;
-    padding: 0.2em 0.6em;
-    border: none;
+    border: 1px solid transparent;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.4em 1.2em;
     outline: 0;
+    background-color: #2997ff;
+    color: #fff;
+    transition: background-color 0.25s;
+}
+button:hover {
+    background-color: #2487e5;
 }
 
 textarea {
@@ -58,7 +68,7 @@ textarea {
 }
 
 .notice-title {
-    color: #7FB77E;
+    color: #bcbcbc;
     margin-bottom: 10px;
 }
 

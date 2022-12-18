@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    font-family: "consolas", monospace;
+    -webkit-font-smoothing: antialiased;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+#gameContainer {
+    text-align: center;
+    padding: 20px;
+}
+
+#gameScore {
+    font-size: 4rem;
+}
+
+#buttonReset {
+    padding: 0.4em 1em;
+    background-color: steelblue;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    outline: 0;
+    font-weight: bold;
+}
+
+#buttonReset:hover {
+    background-color: #3f75a2;
+}

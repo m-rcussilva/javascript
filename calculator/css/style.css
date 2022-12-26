@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input,
+button,
+textarea {
+    font: inherit;
+}
+
+.main {
+    background-color: #7a82e3;
+    width: 400px;
+}
+
+.output {
+    padding: 1em 1em;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.container-input {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#num1,
+#num2 {
+    text-align: end;
+    padding: 0.2em 0.6em;
+}
+
+#inputs {
+    border: 1px solid #000;
+    padding: 1em;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container-result {
+    padding: 1em;
+}
+
+#result {
+    text-align: end;
+    font-size: 1.6rem;
+}
+
+.btns-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.btns-grid > div {
+    border: 1px solid black;
+}
+
+.btn-zero {
+    grid-column: span 2;
+}

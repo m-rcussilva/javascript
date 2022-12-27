@@ -55,12 +55,10 @@ button {
     margin-bottom: 10px;
 }
 
-#input {
-    border: 1px solid #000;
-    padding: 1em;
-    font-size: 1rem;
-    width: 100%;
+#display-i {
+    font-size: 1.2rem;
     text-align: end;
+    overflow-x: scroll;
 }
 
 .container-output {
@@ -89,18 +87,6 @@ button {
 
 .btns-grid > div {
     border: 1px solid black;
-}
-
-#btn {
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    background-color: var(--btns-color);
-    border: none;
-    outline: 0;
-    color: var(--text-color);
-    font-weight: bold;
-    font-size: 2rem;
 }
 
 .btn {

@@ -1,47 +1,18 @@
-const num1Input = document.getElementById("num1")
-const num2Input = document.getElementById("num2")
-const resultEl = document.getElementById("result")
+const displayI = document.getElementById("display-i")
+const displayO = document.getElementById("display-o")
 
-function add(num1, num2) {
-    return num1 + num2
-}
+const num0 = document.getElementById("num0")
+const num1 = document.getElementById("num1")
+const num2 = document.getElementById("num2")
+const num3 = document.getElementById("num3")
+const num4 = document.getElementById("num4")
+const num5 = document.getElementById("num5")
+const num6 = document.getElementById("num6")
+const num7 = document.getElementById("num7")
+const num8 = document.getElementById("num8")
+const num9 = document.getElementById("num9")
 
-function subtract(num1, num2) {
-    return num1 - num2
-}
-
-function multiply(num1, num2) {
-    return num1 * num2
-}
-
-function divide(num1, num2) {
-    return num1 / num2
-}
-
-document.getElementById("add-btn").addEventListener("click", function () {
-    const num1 = Number(num1Input.value)
-    const num2 = Number(num2Input.value)
-    const result = add(num1, num2)
-    resultEl.textContent = result
-})
-
-document.getElementById("subtract-btn").addEventListener("click", function () {
-    const num1 = Number(num1Input.value)
-    const num2 = Number(num2Input.value)
-    const result = subtract(num1, num2)
-    resultEl.textContent = result
-})
-
-document.getElementById("multiply-btn").addEventListener("click", function () {
-    const num1 = Number(num1Input.value)
-    const num2 = Number(num2Input.value)
-    const result = multiply(num1, num2)
-    resultEl.textContent = result
-})
-
-document.getElementById("divide-btn").addEventListener("click", function () {
-    const num1 = Number(num1Input.value)
-    const num2 = Number(num2Input.value)
-    const result = divide(num1, num2)
-    resultEl.textContent = result
+num1.addEventListener("click", (e) => {
+    displayI.textContent += e.target.textContent
+    console.log(e.target.textContent)
 })

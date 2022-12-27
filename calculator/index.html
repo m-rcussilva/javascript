@@ -9,36 +9,40 @@
     </head>
     <body>
         <main class="main">
-            <div class="output">
+            <div class="display-io">
                 <div class="container-input">
-                    <input type="text" id="num1" />
-                    <input type="text" id="num2" />
+                    <div id="input"></div>
                 </div>
 
-                <div class="container-result">
-                    <p id="result"></p>
+                <div class="container-output">
+                    <p id="output"></p>
                 </div>
             </div>
 
             <div class="btns-grid">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button type="button" id="divide-btn">/</button>
+                <button id="btn">AC</button>
+                <button id="btn">+/-</button>
+                <button id="btn">%</button>
+                <button type="button" id="divide-btn" class="btn">/</button>
 
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button type="button" id="multiply-btn">*</button>
+                <button id="btn">7</button>
+                <button id="btn">8</button>
+                <button id="btn">9</button>
+                <button type="button" id="multiply-btn" class="btn">*</button>
 
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button type="button" id="subtract-btn">-</button>
+                <button id="btn">4</button>
+                <button id="btn">5</button>
+                <button id="btn">6</button>
+                <button type="button" id="subtract-btn" class="btn">-</button>
+
+                <button id="btn">1</button>
+                <button id="btn">2</button>
+                <button id="btn">3</button>
+                <button type="button" id="add-btn" class="btn">+</button>
 
                 <button class="btn-zero">0</button>
-                <button>,</button>
-                <button type="button" id="add-btn">+</button>
+                <button id="btn">,</button>
+                <button id="btn">=</button>
             </div>
         </main>
     </body>

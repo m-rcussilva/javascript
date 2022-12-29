@@ -44,6 +44,7 @@ button {
     height: 802px;
     border-radius: 36px;
     position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .display-io {
@@ -52,7 +53,7 @@ button {
 }
 
 .container-input {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 #display-i {
@@ -61,8 +62,9 @@ button {
     overflow-x: scroll;
 }
 
-.container-output {
-    padding: 1em;
+#display-o {
+    font-size: 2.8rem;
+    text-align: end;
 }
 
 #result {
